@@ -6,6 +6,7 @@ module Riif
 
       def self.call(template)
         <<-RUBY
+          iif = ::Riif::IIF.new
 
           #{template.source}
 

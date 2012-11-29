@@ -1,7 +1,6 @@
-require "riif/version"
-require 'riif/iif'
-require 'riif/railtie' if defined?(Rails)
+require_relative 'riif/version'
+require_relative 'riif/iif'
+require_relative 'riif/railtie' if defined?(Rails)
 
 module Riif
-  # Your code goes here...
 end
