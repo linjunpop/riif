@@ -25,15 +25,16 @@ module Riif::DSL
     START_COLUMN = 'TRNS'
     END_COLUMN = 'ENDTRNS'
 
-    def output
-      {
-        headers: [
-          ["!#{START_COLUMN}"].concat(HEADER_COLUMNS.map(&:upcase)),
-          ["!SPL"].concat(Spl::HEADER_COLUMNS.map(&:upcase)),
-          ["!#{END_COLUMN}"]
-        ],
-          rows: @rows << [END_COLUMN]
-      }
+    def headers
+      [
+        ["!#{START_COLUMN}"].concat(HEADER_COLUMNS.map(&:upcase)),
+        ["!SPL"].concat(Spl::HEADER_COLUMNS.map(&:upcase)),
+        ["!#{END_COLUMN}"]
+      ]
+    end
+
+    def rows
+      @rows << [END_COLUMN]
     end
 
     def spl(&block)

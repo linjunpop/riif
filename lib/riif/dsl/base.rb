@@ -22,7 +22,22 @@ module Riif::DSL
     end
 
     def output
-      raise 'Does not implement method: output'
+      {
+        headers: headers,
+        rows: rows
+      }
+    end
+
+    def headers
+      [
+        ["!#{self.class::START_COLUMN}"].concat(
+          self.class::HEADER_COLUMNS.map(&:upcase)
+        )
+      ]
+    end
+
+    def rows
+      @rows
     end
 
     def method_missing(method_name, *args, &block)

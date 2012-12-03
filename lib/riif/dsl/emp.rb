@@ -27,16 +27,5 @@ module Riif::DSL
     ]
     START_COLUMN = 'EMP'
     END_COLUMN = ''
-
-    def output
-      {
-        headers: [
-          ["!#{START_COLUMN}"].concat(HEADER_COLUMNS.map(&:upcase))
-        ],
-        rows: @rows
-      }
-    end
   end
 end
-
-

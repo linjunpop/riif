@@ -22,11 +22,8 @@ module Riif::DSL
     START_COLUMN = 'SPL'
     END_COLUMN = ''
 
-    def output
-      {
-        rows: @rows
-      }
+    def headers
+      []
     end
   end
 end
-
