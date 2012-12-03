@@ -1,5 +1,5 @@
 module Riif::DSL
-  class Spl
+  class Spl < Base
     HEADER_COLUMNS = [
       :splid,
       :trnstype,
@@ -19,41 +19,13 @@ module Riif::DSL
       :reimbexp,
       :extra
     ]
-
-    def initialize
-      @rows = []
-      @current_row = []
-      @start_column = 'SPL'
-    end
-
-    def build(&block)
-
-      instance_eval(&block)
-
-      output
-    end
+    START_COLUMN = 'SPL'
+    END_COLUMN = ''
 
     def output
       {
         rows: @rows
       }
-    end
-
-    def row(&block)
-      @current_row = [@start_column]
-
-      instance_eval(&block)
-
-      @rows << @current_row
-      @rows << [@end_column]
-    end
-
-    def method_missing(method_name, *args, &block)
-      if HEADER_COLUMNS.include?(method_name)
-        @current_row[HEADER_COLUMNS.index(method_name) + 1] = args[0]
-      else
-        super
-      end
     end
   end
 end

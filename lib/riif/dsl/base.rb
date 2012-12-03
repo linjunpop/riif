@@ -1,15 +1,11 @@
 module Riif::DSL
   class Base
-    @rows = []
-    @current_row = []
 
-    def header_columns
-    end
-
-    def start_column
-    end
-
-    def end_column
+    def initialize
+      @rows = []
+      @current_row = []
+      @start_column = self.class::START_COLUMN
+      @end_column = self.class::END_COLUMN
     end
 
     def build(&block)
@@ -19,25 +15,21 @@ module Riif::DSL
       output
     end
 
-    def output
-      CSV.generate(col_sep: "\t") do |tsv|
-        tsv << ["!#{@start}"].concat(@rows)
-        tsv << ["!#{@end}"]
-        tsv << @rows
-      end
-    end
-
     def row(&block)
-      @current_row = [@start]
+      @current_row = [@start_column]
 
       instance_eval(&block)
 
-      @rows << (@current_row << "\n")
+      @rows << @current_row
+    end
+
+    def output
+      raise 'Does not implement method: output'
     end
 
     def method_missing(method_name, *args, &block)
-      if header_columns.include?(method_name)
-        @current_row[header_columns.index(method_name) + 1] = args[0]
+      if self.class::HEADER_COLUMNS.include?(method_name)
+        @current_row[self.class::HEADER_COLUMNS.index(method_name) + 1] = args[0]
       else
         super
       end

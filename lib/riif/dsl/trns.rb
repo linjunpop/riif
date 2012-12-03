@@ -1,5 +1,5 @@
 module Riif::DSL
-  class Trns
+  class Trns < Base
     HEADER_COLUMNS = [
       :trnsid,
       :trnstype,
@@ -22,20 +22,8 @@ module Riif::DSL
       :paid,
       :shipdate
     ]
-
-    def initialize
-      @rows = []
-      @current_row = []
-      @start_column = 'TRNS'
-      @end_column = 'ENDTRNS'
-    end
-
-    def build(&block)
-
-      instance_eval(&block)
-
-      output
-    end
+    START_COLUMN = 'TRNS'
+    END_COLUMN = 'ENDTRNS'
 
     def output
       {
@@ -48,25 +36,9 @@ module Riif::DSL
       }
     end
 
-    def row(&block)
-      @current_row = [@start_column]
-
-      instance_eval(&block)
-
-      @rows << @current_row
-    end
-
     def spl(&block)
       Spl.new.build(&block)[:rows].each do |row|
         @rows << row
-      end
-    end
-
-    def method_missing(method_name, *args, &block)
-      if HEADER_COLUMNS.include?(method_name)
-        @current_row[HEADER_COLUMNS.index(method_name) + 1] = args[0]
-      else
-        super
       end
     end
   end

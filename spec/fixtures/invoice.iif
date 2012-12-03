@@ -3,5 +3,5 @@
 !ENDTRNS
 TRNS	123	INVOICE	8/31/1988	Accounts Receivable	Customer		20	1		N	N	Baker	Customer
 SPL	777	INVOICE	8/31/1988	Income Account			-20			N	-2	10	Sales Item		N
-
+SPL	888
 ENDTRNS

@@ -34,6 +34,12 @@ describe Riif::DSL::Trns do
           taxable 'N'
         end
       end
+
+      spl do
+        row do
+          splid '888'
+        end
+      end
     end
   }
 
