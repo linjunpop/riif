@@ -1,6 +1,6 @@
 # Riif
 
-A simple gem to generate IIF file.
+A simple DSL to generate IIF file.
 
 [![Build Status](https://secure.travis-ci.org/linjunpop/riif.png?branch=master)](https://travis-ci.org/linjunpop/riif)
 [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/linjunpop/riif)
