@@ -6,6 +6,7 @@ require 'riif/dsl/accnt'
 require 'riif/dsl/bud'
 require 'riif/dsl/cust'
 require 'riif/dsl/emp'
+require 'riif/dsl/klass'
 require 'riif/dsl/spl'
 require 'riif/dsl/trns'
 
