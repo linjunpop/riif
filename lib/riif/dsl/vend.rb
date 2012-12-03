@@ -2,8 +2,6 @@ module Riif::DSL
   class Vend < Base
     HEADER_COLUMNS = [
       :name,
-      :timestamp,
-      :refnum,
       :printas,
       :addr1,
       :addr2,
