@@ -28,11 +28,11 @@ module Riif::DSL
     def output
       {
         headers: [
-          ["!#{@start_column}"].concat(HEADER_COLUMNS.map(&:upcase)),
+          ["!#{START_COLUMN}"].concat(HEADER_COLUMNS.map(&:upcase)),
           ["!SPL"].concat(Spl::HEADER_COLUMNS.map(&:upcase)),
-          ["!#{@end_column}"]
+          ["!#{END_COLUMN}"]
         ],
-          rows: @rows << [@end_column]
+          rows: @rows << [END_COLUMN]
       }
     end
 

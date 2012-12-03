@@ -4,8 +4,6 @@ module Riif::DSL
     def initialize
       @rows = []
       @current_row = []
-      @start_column = self.class::START_COLUMN
-      @end_column = self.class::END_COLUMN
     end
 
     def build(&block)
@@ -16,7 +14,7 @@ module Riif::DSL
     end
 
     def row(&block)
-      @current_row = [@start_column]
+      @current_row = [self.class::START_COLUMN]
 
       instance_eval(&block)
 
