@@ -1,7 +1,7 @@
 module Riif::DSL
-  class Trns
+  class Spl
     HEADER_COLUMNS = [
-      :trnsid,
+      :splid,
       :trnstype,
       :date,
       :accnt,
@@ -11,23 +11,19 @@ module Riif::DSL
       :docnum,
       :memo,
       :clear,
-      :toprint,
-      :addr1,
-      :addr2,
-      :addr3,
-      :addr4,
-      :addr5,
-      :duedate,
-      :terms,
-      :paid,
-      :shipdate
+      :qnty,
+      :price,
+      :invitem,
+      :paymeth,
+      :taxable,
+      :reimbexp,
+      :extra
     ]
 
     def initialize
       @rows = []
       @current_row = []
-      @start_column = 'TRNS'
-      @end_column = 'ENDTRNS'
+      @start_column = 'SPL'
     end
 
     def build(&block)
@@ -39,12 +35,7 @@ module Riif::DSL
 
     def output
       {
-        headers: [
-          ["!#{@start_column}"].concat(HEADER_COLUMNS.map(&:upcase)),
-          ["!SPL"].concat(Spl::HEADER_COLUMNS.map(&:upcase)),
-          ["!#{@end_column}"]
-        ],
-          rows: @rows << [@end_column]
+        rows: @rows
       }
     end
 
@@ -54,12 +45,7 @@ module Riif::DSL
       instance_eval(&block)
 
       @rows << @current_row
-    end
-
-    def spl(&block)
-      Spl.new.build(&block)[:rows].each do |row|
-        @rows << row
-      end
+      @rows << [@end_column]
     end
 
     def method_missing(method_name, *args, &block)
@@ -71,3 +57,4 @@ module Riif::DSL
     end
   end
 end
+

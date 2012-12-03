@@ -7,12 +7,32 @@ describe Riif::DSL::Trns do
   let(:trns) {
     Riif::IIF.new.trns do
       row do
-        trnsid '123'
-        date '33'
+        trnsid 123
+        trnstype 'INVOICE'
+        date '8/31/1988'
+        accnt 'Accounts Receivable'
+        name 'Customer'
+        amount 20
+        docnum 1
+        clear 'N'
+        toprint 'N'
+        addr1 'Baker'
+        addr2 'Customer'
       end
 
-      row do
-        trnsid '456'
+      spl do
+        row do
+          splid '777'
+          trnstype 'INVOICE'
+          date '8/31/1988'
+          accnt 'Income Account'
+          amount '-20'
+          clear 'N'
+          qnty '-2'
+          price 10
+          invitem 'Sales Item'
+          taxable 'N'
+        end
       end
     end
   }
