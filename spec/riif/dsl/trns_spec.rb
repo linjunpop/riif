@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Riif::DSL::Trns do
 
-  let(:invoice) { File.read('spec/fixtures/invoice.iif') }
+  let(:expected) { File.read('spec/fixtures/trns.iif') }
 
   let(:trns) {
     Riif::IIF.new.trns do
@@ -45,5 +45,5 @@ describe Riif::DSL::Trns do
 
   subject { trns }
 
-  it { should eq invoice }
+  it { should eq expected }
 end
