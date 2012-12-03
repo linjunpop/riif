@@ -2,6 +2,13 @@
 
 ## 0.0.1 (unreleased)
 
+  * Implement VEND
+  * Implement VTYPE
+  * Implement SHIPMETH
+  * Implement PAYMETH
+  * Implement INVMEMO
+  * Implement INVITEM
+  * Implement CTYPE
   * Implement CLASS
   * Implement ACCNT
   * Implement EMP
