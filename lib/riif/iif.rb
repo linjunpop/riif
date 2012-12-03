@@ -2,6 +2,7 @@ require 'csv'
 require_relative 'dsl/base'
 require_relative 'dsl/trns'
 require_relative 'dsl/spl'
+require_relative 'dsl/cust'
 
 module Riif
   class IIF
