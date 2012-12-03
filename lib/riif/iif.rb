@@ -4,6 +4,7 @@ require 'riif/dsl/base'
 
 require 'riif/dsl/accnt'
 require 'riif/dsl/bud'
+require 'riif/dsl/ctype'
 require 'riif/dsl/cust'
 require 'riif/dsl/emp'
 require 'riif/dsl/klass'
