@@ -14,6 +14,7 @@ require 'riif/dsl/paymeth'
 require 'riif/dsl/shipmeth'
 require 'riif/dsl/spl'
 require 'riif/dsl/trns'
+require 'riif/dsl/vtype'
 
 module Riif
   class IIF
