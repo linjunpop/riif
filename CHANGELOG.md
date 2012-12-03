@@ -1,6 +1,8 @@
 # CHANGELOG
 
-## 0.0.1 (unreleased)
+## NEXT (unreleased)
+
+## 0.0.1
 
   * Implement OTHERNAME
   * Implement TIMEACT
