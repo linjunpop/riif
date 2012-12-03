@@ -140,6 +140,10 @@ ENDTRNS
 au BufWinEnter,BufRead,BufNewFile *.riif set filetype=ruby
 ```
 
+## Resources
+
+[Use Intuit Interchange Format (.iif) files](http://support.quickbooks.intuit.com/support/articles/HOW12778)
+
 ## Contributing
 
 1. Fork it
