@@ -11,6 +11,7 @@ require 'riif/dsl/invitem'
 require 'riif/dsl/invmemo'
 require 'riif/dsl/klass'
 require 'riif/dsl/paymeth'
+require 'riif/dsl/shipmeth'
 require 'riif/dsl/spl'
 require 'riif/dsl/trns'
 
