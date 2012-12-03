@@ -8,7 +8,7 @@ module Riif::DSL
       :class,
       :customer
     ]
-    START_COLUMN = 'ACCNT'
+    START_COLUMN = 'BUD'
     END_COLUMN = ''
   end
 end
