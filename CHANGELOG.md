@@ -2,6 +2,7 @@
 
 ## 0.0.1 (unreleased)
 
+  * Implement TIMEACT
   * Implement TERMS
   * Implement VEND
   * Implement VTYPE
