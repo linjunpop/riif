@@ -1,7 +1,8 @@
 # CHANGELOG
 
-## 0.1.0 (unreleased)
+## 0.0.1 (unreleased)
 
+  * Implement ACCNT
   * Implement EMP
   * Implement CUST
   * Implement TRNS and SPL
