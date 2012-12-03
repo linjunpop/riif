@@ -21,7 +21,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+An example: https://gist.github.com/4193122
+
+## Editors
+
+### Vim
+
+```VimL
+au BufWinEnter,BufRead,BufNewFile *.riif set filetype=ruby
+```
 
 ## Contributing
 
