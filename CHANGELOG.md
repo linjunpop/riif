@@ -2,6 +2,7 @@
 
 ## 0.0.1 (unreleased)
 
+  * Implement TERMS
   * Implement VEND
   * Implement VTYPE
   * Implement SHIPMETH
