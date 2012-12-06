@@ -4,14 +4,16 @@ describe Riif::DSL::Invmemo do
   let(:expected) { File.read('spec/fixtures/invmemo.iif') }
 
   let(:invmemo) {
-    Riif::IIF.new.invmemo do
-      row do
-        name 'invmemo 1'
+    Riif::IIF.new do
+      invmemo do
+        row do
+          name 'invmemo 1'
+        end
       end
     end
   }
 
   subject { invmemo }
 
-  it { should eq expected }
+  its(:output) { should eq expected }
 end
