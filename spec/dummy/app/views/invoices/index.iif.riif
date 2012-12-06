@@ -1,0 +1,27 @@
+iif.trns do
+  row do
+    trnsid 12345
+    trnstype 'BILL'
+    date '3/14/1984'
+    accnt 'Accounts Payable'
+    name 'EZ'
+    amount -300
+    docnum 12345
+    clear 'N'
+  end
+
+  spl do
+    row do
+      splid 001
+      trnstype 'BILL'
+      date '3/14/1984'
+      accnt 'Payable'
+      invitem 'Base Rate'
+      name 'CMA'
+      amount 300
+      memo "foo"
+      qnty 3
+      price 150
+    end
+  end
+end

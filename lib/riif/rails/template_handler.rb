@@ -10,6 +10,7 @@ module Riif
 
           #{template.source}
 
+          iif.output
         RUBY
       end
 
