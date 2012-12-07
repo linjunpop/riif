@@ -1,6 +1,7 @@
 # CHANGELOG
 
 ## NEXT (unreleased)
+  * #2 - Implement Mixed document in one IIF file. (DSL had been changed)
 
 ## 0.0.1
 
