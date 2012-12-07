@@ -4,16 +4,18 @@ describe Riif::DSL::Invitem do
   let(:expected) { File.read('spec/fixtures/invitem.iif') }
 
   let(:invitem) {
-    Riif::IIF.new.invitem do
-      row do
-        name 'invitem 1'
-        invitemtype 'INVENTORY'
-        dep_type 1
+    Riif::IIF.new do
+      invitem do
+        row do
+          name 'invitem 1'
+          invitemtype 'INVENTORY'
+          dep_type 1
+        end
       end
     end
   }
 
   subject { invitem }
 
-  it { should eq expected }
+  its(:output) { should eq expected }
 end

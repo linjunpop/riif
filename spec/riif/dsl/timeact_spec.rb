@@ -4,7 +4,8 @@ describe Riif::DSL::Timeact do
   let(:expected) { File.read('spec/fixtures/timeact.iif') }
 
   let(:timeact) {
-    Riif::IIF.new.timeact do
+    Riif::IIF.new do
+    timeact do
       row do
         date '06/21/97'
         job 'job 1'
@@ -15,10 +16,10 @@ describe Riif::DSL::Timeact do
         billingstatus 0
       end
     end
+    end
   }
 
   subject { timeact }
 
-  it { should eq expected }
+  its(:output) { should eq expected }
 end
-
