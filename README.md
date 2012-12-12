@@ -31,7 +31,7 @@ With a custom template handler, it works with Rails.
 class InvoicesController < ApplicationController
   def show
     respond_to do |format|
-      format.iif
+      format.iif { render iif: render_to_string, filename: 'batman'}
       format.html
     end
   end
