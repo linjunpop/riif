@@ -10,6 +10,7 @@ module Riif
         end
 
         require 'riif/rails/template_handler'
+        require 'riif/rails/renderer'
       end
     end
   end
