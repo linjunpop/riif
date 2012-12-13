@@ -1,6 +1,8 @@
 # CHANGELOG
 
 ## NEXT (unreleased)
+
+## 0.2.0
   * #4 - Add support to customize filename
   * #5 - Separate different lists into groups
 
@@ -8,7 +10,6 @@
   * #2 - Implement Mixed document in one IIF file. (DSL had been changed)
 
 ## 0.0.1
-
   * Implement OTHERNAME
   * Implement TIMEACT
   * Implement TERMS
@@ -24,3 +25,4 @@
   * Implement EMP
   * Implement CUST
   * Implement TRNS and SPL
+
