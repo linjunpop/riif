@@ -57,11 +57,5 @@ describe Riif::IIF do
     subject { mixed }
 
     its(:output) { should eq expected }
-
-  after do
-    File.open('spec/fixtures/mixed.iif', 'w') do |f|
-      f << subject
-    end
-  end
   end
 end
