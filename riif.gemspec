@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Riif::VERSION
   gem.authors       = ["Jun Lin"]
   gem.email         = ["linjunpop@gmail.com"]
-  gem.description   = "DSL to generate IIF file"
-  gem.summary       = "A simple DSL to generate iif file"
+  gem.description   = "A simple DSL to generate QuickBooks IIF file"
+  gem.summary       = "A simple DSL to generate QuickBooks IIF file"
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
