@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["linjunpop@gmail.com"]
   gem.description   = "A simple DSL to generate QuickBooks IIF file"
   gem.summary       = "A simple DSL to generate QuickBooks IIF file"
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/linjunpop/riif"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
