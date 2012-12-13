@@ -19,6 +19,11 @@ Or install it yourself as:
 
     $ gem install riif
 
+
+## Limitation
+
+You have to use `klass` for `class` and `_1099` for `1099`
+
 ## Usage
 
 ### With Rails
