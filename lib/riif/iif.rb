@@ -23,10 +23,7 @@ require 'riif/dsl/vtype'
 module Riif
   class IIF
     def initialize(&block)
-      @output = {
-        headers: [],
-        rows: []
-      }
+      @output = {}
       if block_given?
         instance_eval(&block)
       end
@@ -34,11 +31,14 @@ module Riif
 
     def output
       CSV.generate(col_sep: "\t") do |tsv|
-        @output[:headers].uniq.each do |header|
-          tsv << header
-        end
-        @output[:rows].each do |row|
-          tsv << row
+
+        @output.each do |_, list|
+          list[:headers].uniq.each do |header|
+            tsv << header
+          end
+          list[:rows].each do |row|
+            tsv << row
+          end
         end
       end
     end
@@ -46,8 +46,10 @@ module Riif
     def method_missing(method_name, *args, &block)
       result = eval("::Riif::DSL::#{method_name.capitalize}").new.build(&block)
 
-      @output[:headers].concat(result[:headers])
-      @output[:rows].concat(result[:rows])
+      @output[method_name] ||= { headers: [], rows: [] }
+
+      @output[method_name][:headers].concat(result[:headers])
+      @output[method_name][:rows].concat(result[:rows])
     end
   end
 end
