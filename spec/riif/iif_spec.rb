@@ -7,6 +7,13 @@ describe Riif::IIF do
 
     let(:mixed) {
       Riif::IIF.new do
+        cust do
+          row do
+            name 'Batman'
+            baddr1 'Amoy'
+          end
+        end
+
         bud do
           row do
             accnt 'Accounts Receivable'
@@ -35,6 +42,13 @@ describe Riif::IIF do
             row do
               splid 'foobar'
             end
+          end
+        end
+
+        cust do
+          row do
+            name 'Joker'
+            baddr1 'Amoy'
           end
         end
       end

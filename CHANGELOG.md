@@ -2,6 +2,7 @@
 
 ## NEXT (unreleased)
   * #4 - Add support to customize filename
+  * #5 - Separate different lists into groups
 
 ## 0.1.0
   * #2 - Implement Mixed document in one IIF file. (DSL had been changed)
