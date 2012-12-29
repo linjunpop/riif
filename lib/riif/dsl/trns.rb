@@ -17,10 +17,19 @@ module Riif::DSL
       :addr3,
       :addr4,
       :addr5,
+      :saddr1,
+      :saddr2,
+      :saddr3,
+      :saddr4,
+      :saddr5,
       :duedate,
       :terms,
       :paid,
-      :shipdate
+      :shipdate,
+      :rep,
+      :ponum,
+      :invtitle,
+      :invmemo
     ]
     START_COLUMN = 'TRNS'
     END_COLUMN = 'ENDTRNS'
