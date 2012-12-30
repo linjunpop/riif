@@ -2,6 +2,8 @@
 
 ## NEXT (unreleased)
 
+## 0.3.0
+
   * #6 by [@jphpsf](https://github.com/jphpsf)
     * Shipping address (SADDR1 to SADDR5)
     * Sales rep (rep)
