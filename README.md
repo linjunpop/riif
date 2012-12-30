@@ -159,6 +159,12 @@ au BufWinEnter,BufRead,BufNewFile *.riif set filetype=ruby
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
+## Contributors
+
+:beers:
+
+https://github.com/linjunpop/riif/graphs/contributors
+
 ## Changes
 
 See [CHANGELOG.md]()
