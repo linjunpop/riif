@@ -19,6 +19,9 @@ describe Riif::DSL::Trns do
           toprint 'N'
           addr1 'Baker'
           addr2 'Customer'
+          saddr1 'Watson'
+          saddr2 'Recipient'
+          rep 'BOB'
         end
 
         spl do
