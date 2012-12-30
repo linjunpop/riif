@@ -2,6 +2,12 @@
 
 ## NEXT (unreleased)
 
+  * #6 by [@jphpsf](https://github.com/jphpsf)
+    * Shipping address (SADDR1 to SADDR5)
+    * Sales rep (rep)
+    * Invoice title and memo (INVTITLE and INVMEMO)
+    * Purchase order number (PONUM)
+
 ## 0.2.0
   * #4 - Add support to customize filename
   * #5 - Separate different lists into groups
