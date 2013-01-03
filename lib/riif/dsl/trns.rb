@@ -25,6 +25,7 @@ module Riif::DSL
       :duedate,
       :terms,
       :paid,
+      :paymeth,
       :shipdate,
       :rep,
       :ponum,
