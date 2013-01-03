@@ -2,6 +2,8 @@
 
 ## NEXT (unreleased)
 
+  * #7 Add missing paymeth to transaction type. [@jphpsf](https://github.com/jphpsf)
+
 ## 0.3.0
 
   * #6 by [@jphpsf](https://github.com/jphpsf)
