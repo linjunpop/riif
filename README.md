@@ -3,7 +3,8 @@
 A simple DSL to generate IIF file.
 
 [![Build Status](https://travis-ci.org/linjunpop/riif.png?branch=master)](https://travis-ci.org/linjunpop/riif)
-[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/linjunpop/riif)
+[![Gem Version](https://badge.fury.io/rb/riif.png)](http://badge.fury.io/rb/riif)
+[![Code Climate](https://codeclimate.com/github/linjunpop/riif.png)](https://codeclimate.com/github/linjunpop/riif)
 [![endorse](http://api.coderwall.com/linjunpop/endorsecount.png)](http://coderwall.com/linjunpop)
 
 ## Installation
