@@ -1,6 +1,9 @@
 require 'bundler'
 Bundler.require(:development)
 
+require 'coveralls'
+Coveralls.wear!
+
 require 'riif'
 
 # This line has to before require 'rspec/rails'
