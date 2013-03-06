@@ -24,4 +24,5 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'awesome_print'
   gem.add_development_dependency 'combustion', '~> 0.3.1'
   gem.add_development_dependency 'fuubar'
+  gem.add_development_dependency 'coveralls'
 end
