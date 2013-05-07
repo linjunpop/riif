@@ -5,6 +5,16 @@ describe Riif::DSL::Timeact do
 
   let(:timeact) {
     Riif::IIF.new do
+    timerhdr do
+      row do
+        ver 8
+        rel 0
+        companyname 'Import Test Company'
+        importedbefore 'N'
+        fromtimer 'Y'
+        companycreatetime '1208544781'
+      end
+    end
     timeact do
       row do
         date '06/21/97'
