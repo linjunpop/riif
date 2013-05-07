@@ -2,6 +2,8 @@
 
 ## NEXT (unreleased)
 
+  * #9 Implement TIMERHDR. [@ghiculescu](https://github.com/ghiculescu)
+
 ## 0.4.0
 
   * #7 Add missing paymeth to transaction type. [@jphpsf](https://github.com/jphpsf)
