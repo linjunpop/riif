@@ -2,6 +2,8 @@
 
 ## NEXT (unreleased)
 
+## 0.5.0
+
   * #9 Implement TIMERHDR. [@ghiculescu](https://github.com/ghiculescu)
 
 ## 0.4.0
