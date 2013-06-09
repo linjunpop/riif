@@ -2,6 +2,8 @@
 
 ## NEXT (unreleased)
 
+  * #10 Add option to pass an argument to `Riif.new`. [@ghiculescu](https://github.com/ghiculescu)
+
 ## 0.5.0
 
   * #9 Implement TIMERHDR. [@ghiculescu](https://github.com/ghiculescu)
