@@ -142,6 +142,22 @@ SPL	888
 ENDTRNS
 ```
 
+If you prefer, you can pass an argument along with your block:
+
+```ruby
+Riif::IIF.new do |riif|
+  riif.trns do |trns|
+    trns.row do |row|
+      row.trnsid 123
+      row.trnstype 'INVOICE'
+      row.date '8/31/1988'
+      row.accnt 'Accounts Receivable'
+      row.name 'Customer'
+    end
+  end
+end
+```
+
 ## Editors
 
 ### Vim
