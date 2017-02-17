@@ -21,6 +21,8 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rails'
   gem.add_development_dependency 'rspec'
   gem.add_development_dependency 'rspec-rails'
+  gem.add_development_dependency 'rspec-its'
+  gem.add_development_dependency 'rails-controller-testing'
   gem.add_development_dependency 'awesome_print'
   gem.add_development_dependency 'combustion', '~> 0.3.1'
   gem.add_development_dependency 'fuubar'
