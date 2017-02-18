@@ -2,7 +2,7 @@ module Riif
   module Rails
     class TemplateHandler
       cattr_accessor :default_format
-      self.default_format = Mime::IIF
+      self.default_format = Mime[:iif]
 
       def self.call(template)
         <<-RUBY

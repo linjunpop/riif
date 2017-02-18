@@ -6,7 +6,7 @@ module Riif
         send_data(
           iif_string,
           filename: "#{filename}.iif",
-          type: Mime::IIF,
+          type: Mime[:iif],
           disposition: 'attachment'
         )
       end
