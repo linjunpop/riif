@@ -18,12 +18,11 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.add_development_dependency 'pry'
-  gem.add_development_dependency 'rails'
-  gem.add_development_dependency 'rspec'
-  gem.add_development_dependency 'rspec-rails'
-  gem.add_development_dependency 'rspec-its'
-  gem.add_development_dependency 'rails-controller-testing'
-  gem.add_development_dependency 'awesome_print'
+  gem.add_development_dependency 'rails', '~> 5.0'
+  gem.add_development_dependency 'rspec', '~> 3.5'
+  gem.add_development_dependency 'rspec-rails', '~> 3.5'
+  gem.add_development_dependency 'rspec-its', '~> 1.2'
+  gem.add_development_dependency 'rails-controller-testing', '~> 1.0'
   gem.add_development_dependency 'combustion', '~> 0.3.1'
   gem.add_development_dependency 'fuubar'
   gem.add_development_dependency 'coveralls'

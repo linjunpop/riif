@@ -4,7 +4,7 @@ iif.trns do
     trnstype 'BILL'
     date '3/14/1984'
     accnt 'Accounts Payable'
-    name 'EZ'
+    name awesome
     amount -300
     docnum 12345
     clear 'N'
