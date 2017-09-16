@@ -2,11 +2,10 @@
 
 A simple DSL to generate IIF file.
 
-[![Build Status](https://travis-ci.org/linjunpop/riif.png?branch=master)](https://travis-ci.org/linjunpop/riif)
-[![Gem Version](https://badge.fury.io/rb/riif.png)](http://badge.fury.io/rb/riif)
-[![Code Climate](https://codeclimate.com/github/linjunpop/riif.png)](https://codeclimate.com/github/linjunpop/riif)
-[![Coverage Status](https://coveralls.io/repos/linjunpop/riif/badge.png?branch=master)](https://coveralls.io/r/linjunpop/riif)
-[![endorse](http://api.coderwall.com/linjunpop/endorsecount.png)](http://coderwall.com/linjunpop)
+[![Build Status](https://travis-ci.org/linjunpop/riif.svg?branch=master)](https://travis-ci.org/linjunpop/riif)
+[![Gem Version](https://badge.fury.io/rb/riif.svg)](http://badge.fury.io/rb/riif)
+[![Code Climate](https://codeclimate.com/github/linjunpop/riif.svg)](https://codeclimate.com/github/linjunpop/riif)
+[![Coverage Status](https://coveralls.io/repos/linjunpop/riif/badge.svg?branch=master)](https://coveralls.io/r/linjunpop/riif)
 
 ## Installation
 
