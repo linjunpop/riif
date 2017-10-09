@@ -41,6 +41,8 @@ module Riif::DSL
     end
 
     def method_missing(method_name, *args, &block)
+      method_name = :class if method_name == :klass
+      method_name = :1099 if method_name == :_1099
       if self.class::HEADER_COLUMNS.include?(method_name)
         @current_row[self.class::HEADER_COLUMNS.index(method_name) + 1] = args[0]
       else
