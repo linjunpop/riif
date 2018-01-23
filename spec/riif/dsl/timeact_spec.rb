@@ -22,7 +22,7 @@ describe Riif::DSL::Timeact do
         emp 'Jun'
         item 'item 1'
         duration '13:40'
-        proj 'klass 1'
+        proj 'class 1'
         billingstatus 0
       end
     end
