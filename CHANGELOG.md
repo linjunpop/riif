@@ -2,6 +2,9 @@
 
 ## NEXT (unreleased)
 
+  * #34 Resolved issues on Rails 2. [@newmedio](https://github.com/newmedio)
+  * #34 Fixes class & 1099 issues. [@newmedio](https://github.com/newmedio)
+
 ## 0.6.0
 
   * #10 Add option to pass an argument to `Riif.new`. [@ghiculescu](https://github.com/ghiculescu)
