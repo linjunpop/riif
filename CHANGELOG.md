@@ -2,6 +2,8 @@
 
 ## NEXT (unreleased)
 
+## 0.7.0
+
   * #34 Resolved issues on Rails 2. [@newmedio](https://github.com/newmedio)
   * #34 Fixes class & 1099 issues. [@newmedio](https://github.com/newmedio)
 
