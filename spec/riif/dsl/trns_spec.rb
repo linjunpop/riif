@@ -16,6 +16,7 @@ describe Riif::DSL::Trns do
           amount 20
           docnum 1
           clear 'N'
+          klass "foobar"
           toprint 'N'
           addr1 'Baker'
           addr2 'Customer'
