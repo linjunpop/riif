@@ -167,7 +167,7 @@ au BufWinEnter,BufRead,BufNewFile *.riif set filetype=ruby
 
 ## Resources
 
-[Use Intuit Interchange Format (.iif) files](http://support.quickbooks.intuit.com/support/articles/HOW12778)
+[Export or import Intuit Interchange Format (.IIF) files](https://quickbooks.intuit.com/community/Reports-and-accounting/Export-or-import-Intuit-Interchange-Format-IIF-files/m-p/203229)
 
 ## Contributing
 
