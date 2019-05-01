@@ -4,11 +4,13 @@ module Riif
       cattr_accessor :default_format
       self.default_format = Mime[:iif]
 
-      def self.call(template)
+      def self.call(template, source = nil)
+        source ||= template.source
+
         <<-RUBY
           iif = ::Riif::IIF.new
 
-          #{template.source}
+          #{source}
 
           iif.output
         RUBY
