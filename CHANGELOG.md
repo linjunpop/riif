@@ -2,8 +2,8 @@
 
 ## NEXT (unreleased)
 
-- Stop shipping a gem that overwrites the 'rake' executable from the official 'rake' gem
-  when installing this gem through Bundler.
+- #40 Stop shipping a gem that overwrites the 'rake' executable from the official 'rake' gem
+  when installing this gem through Bundler. [@rg-3](https://github.com/rg-3)
 
 ## 0.8.0
 
