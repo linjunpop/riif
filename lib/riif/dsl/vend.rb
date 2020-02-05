@@ -30,8 +30,7 @@ module Riif::DSL
       :custfld5,
       :custfld6,
       :custfld7,
-      :"1099",
-      :note
+      :"1099"
     ]
     START_COLUMN = 'VEND'
     END_COLUMN = ''
