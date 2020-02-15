@@ -2,6 +2,8 @@
 
 ## NEXT (unreleased)
 
+- #43 Remove duplicate key 'note' in VEND object. [@montulli](https://github.com/montulli)
+
 ## 0.9.0
 
 - #40 Stop shipping a gem that overwrites the 'rake' executable from the official 'rake' gem
