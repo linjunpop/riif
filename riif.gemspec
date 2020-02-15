@@ -17,7 +17,6 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.add_development_dependency 'pry'
   gem.add_development_dependency 'rails', '~> 6.0'
   gem.add_development_dependency 'rspec', '~> 3.5'
   gem.add_development_dependency 'rspec-rails', '~> 3.5'
