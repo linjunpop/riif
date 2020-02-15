@@ -2,6 +2,8 @@
 
 ## NEXT (unreleased)
 
+## 1.0.0
+
 - Requires Ruby >= 2.5.0.
 - #43 Remove duplicate key 'note' in VEND object. [@montulli](https://github.com/montulli)
 
