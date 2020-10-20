@@ -1,14 +1,18 @@
 module Riif::DSL
   class Base
-
     def initialize
       @rows = []
       @current_row = []
     end
 
     def build(&block)
-
-      instance_eval(&block)
+      if block_given?
+        if block.arity == 1
+          yield(self)
+        else
+          instance_eval(&block)
+        end
+      end
 
       output
     end
@@ -16,7 +20,13 @@ module Riif::DSL
     def row(&block)
       @current_row = [self.class::START_COLUMN]
 
-      instance_eval(&block)
+      if block_given?
+        if block.arity == 1
+          yield(self)
+        else
+          instance_eval(&block)
+        end
+      end
 
       @rows << @current_row
     end
