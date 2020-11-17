@@ -2,6 +2,8 @@
 
 ## NEXT (unreleased)
 
+## 1.1.0
+
 - #45 DSL inner blocks accept argument to yield. [@mcelicalderon](https://github.com/mcelicalderon)
 
 ## 1.0.0
